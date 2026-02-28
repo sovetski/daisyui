@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker Example</title>
+    <link rel="stylesheet" href="https://example.com/path-to-daisyui.css">
+</head>
+<body>
+    <h1>Color Picker Example</h1>
+    <p>Select a color:</p>
+    <div class="color-picker">
+        <input type="color" id="color-input" value="#ff5733">
+        <label for="color-input">Predefined Color: #ff5733</label>
+    </div>
+    <div class="colors">
+        <button style="background-color: #ff5733;" onclick="setColor('#ff5733')"></button>
+        <button style="background-color: #33c1ff;" onclick="setColor('#33c1ff')"></button>
+        <button style="background-color: #85ff33;" onclick="setColor('#85ff33')"></button>
+    </div>
+    <script>
+        function setColor(color) {
+            document.getElementById('color-input').value = color;
+        }
+    </script>
+</body>
+</html>
